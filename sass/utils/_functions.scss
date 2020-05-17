@@ -1,0 +1,17 @@
+
+
+/****************************
+*********** GRID **********
+*****************************/
+
+// Can be used in combination with above grid-template-X mixins.
+// These result in the same output:
+// @include grid-template-columns(10px grid-repeat(4, 20px) 30px);
+// @include grid-template-columns(10px 20px 20px 20px 20px 30px);
+@function grid-repeat($repeat, $stuff: 1fr) {
+  $list: ();
+  @for $i from 1 through $repeat {
+    $list: append($list, $stuff, space);
+  }
+  @return $list;
+}
