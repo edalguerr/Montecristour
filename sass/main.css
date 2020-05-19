@@ -146,4 +146,45 @@ table {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.navbar {
+  height: 40px;
+  color: #fff;
+  background: #f03e3e;
+}
+
+.navbar__toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 17px;
+  text-decoration: none;
+  font-family: "PT Sans";
+  color: #fff;
+}
+
+.navbar__toggle-icon {
+  font-size: 22px;
+}
+
+.navbar-container {
+  font-size: 15px;
+  font-family: "PT Sans";
+  color: #fff;
+  background-color: #364558;
+}
+
+.navbar-container__item {
+  padding: 7px;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar-container__link {
+  text-decoration: none;
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
