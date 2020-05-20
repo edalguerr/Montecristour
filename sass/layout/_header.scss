@@ -17,10 +17,13 @@
 	left: 25%;
 	font-size: 24px;
 	text-align: center;
-	text-shadow: 10px 10px 10px black;
+	text-shadow: 10px 10px 8px black;
 	letter-spacing: 2px;
 	color: map-get($colors, 'secondary');
 	font-family: map-get($fonts-family, 'elegance' );
+	//TO DO: assess whether this is going	
+	background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
 }
 
 .slider-header__invitation-text-intro {
@@ -31,7 +34,7 @@
 }
 
 
-
+//TO DO: Eliminar esto
 img{
  width: 100% !important;
 }
