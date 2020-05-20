@@ -206,8 +206,8 @@ table {
   top: 35%;
   left: 25%;
   font-size: 24px;
-  text-shadow: 10px 10px 10px black;
   text-align: center;
+  text-shadow: 10px 10px 10px black;
   letter-spacing: 2px;
   color: #fff;
   font-family: "Pacifico";
@@ -222,5 +222,10 @@ table {
 
 img {
   width: 100% !important;
+}
+
+.home-body-container {
+  padding: 40px 20px;
+  background-color: #f1f3f5;
 }
 /*# sourceMappingURL=main.css.map */
