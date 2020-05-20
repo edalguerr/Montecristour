@@ -8,5 +8,11 @@ $colors: (
 $fonts-family: ( 
 	main: 'PT Sans', 
 	secondary: sans-serif, 
-	complementary: 'Roboto'
+	complementary: 'Roboto',
+	elegance: 'Pacifico'
+);
+
+$padding-section: (
+	topBottom: 50px,
+	leftRight: 20px
 );

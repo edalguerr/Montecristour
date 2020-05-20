@@ -187,4 +187,40 @@ table {
   text-decoration: none;
   color: #fff;
 }
+
+.header-body {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-header {
+  height: 200px;
+}
+
+.slider-header__image {
+  width: 100%;
+}
+
+.slider-header__invitation-text {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  font-size: 24px;
+  text-shadow: 10px 10px 10px black;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: "Pacifico";
+}
+
+.slider-header__invitation-text-intro {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: bolder;
+  font-family: "PT Sans";
+}
+
+img {
+  width: 100% !important;
+}
 /*# sourceMappingURL=main.css.map */
