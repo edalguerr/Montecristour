@@ -37,6 +37,26 @@
   color: $color;
 }
 
+@mixin card-text($height, $font-family, $font-size, $line-height, $color) {
+  overflow: hidden;
+  height: $height;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin card-link-button($padding, $margin, $border, $color, $background) {
+  display: inline-block;
+  text-decoration: none;
+  padding: $padding;
+  margin: $margin;
+  border: $border;
+  color: $color;
+  background: $background;
+}
+
+
 /****************************
 *********** GRID **********
 *****************************/
