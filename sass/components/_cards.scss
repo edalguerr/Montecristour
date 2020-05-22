@@ -1,0 +1,25 @@
+.place-card {
+	@include card-container(
+		100%, 
+		280px, 
+		12px, 
+		0 0 25px, 
+		map-get($colors, 'secondary')
+	);
+}
+
+.place-card__image {
+	@include card-image(auto, 148px);
+}
+
+.place-card__title {
+	@include card-title(
+		5px, 
+  	15px 0, 
+  	map-get($fonts-family, 'main'), 
+  	18px, 
+  	map-get($fonts-weight, 'normal'), 
+  	center, 
+  	map-get($colors, 'main')
+	);
+}

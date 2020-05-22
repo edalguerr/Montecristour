@@ -135,6 +135,9 @@ table {
 *********** GRID **********
 *****************************/
 /****************************
+*********** CARDS **********
+*****************************/
+/****************************
 *********** GRID **********
 *****************************/
 .page-container {
@@ -222,12 +225,36 @@ table {
   font-family: "PT Sans";
 }
 
-img {
-  width: 100% !important;
+.place-card {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  width: 100%;
+  height: 280px;
+  padding: 12px;
+  margin: 0 0 25px;
+  background: #fff;
+}
+
+.place-card__image {
+  width: auto;
+  height: 148px;
+}
+
+.place-card__title {
+  padding: 5px;
+  margin: 15px 0;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #f03e3e;
 }
 
 .home-body-container {
-  padding: 40px 20px;
+  padding: 50px 20px;
   background-color: #f1f3f5;
 }
 /*# sourceMappingURL=main.css.map */

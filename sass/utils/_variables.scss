@@ -12,12 +12,17 @@ $fonts-family: (
 	elegance: 'Pacifico'
 );
 
+$fonts-weight: (
+	normal: 400,
+	bold: 600
+);
+
 $padding-content-container: (
-	topBottom: 40px,
+	topBottom: 50px,
 	leftRight: 20px
 );
 
 $padding-section: (
 	topBottom: 50px,
-	leftRight: 20px
+	leftRight: 0px
 );
