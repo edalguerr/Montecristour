@@ -1,24 +1,13 @@
 /****************************
-*********** CARDS **********
+*********** GENERALS **********
 *****************************/
-@mixin card-container($width, $height, $padding, $margin, $background) {
-  overflow: hidden;
-  box-sizing: border-box;
-  border-radius: 3px;
-  text-align: center;
-  width: $width;
-  height: $height;
-  padding: $padding;
-  margin: $margin;
-  background: $background;
-}
 
-@mixin card-image($width, $height) {
+@mixin image($width, $height) {
   width: $width;
   height: $height;
 }
 
-@mixin card-title(
+@mixin title(
   $padding, 
   $margin, 
   $font-family, 
@@ -37,7 +26,7 @@
   color: $color;
 }
 
-@mixin card-text($height, $font-family, $font-size, $line-height, $color) {
+@mixin text($height, $font-family, $font-size, $line-height, $color) {
   overflow: hidden;
   height: $height;
   font-family: $font-family;
@@ -46,7 +35,7 @@
   color: $color;
 }
 
-@mixin card-link-button($padding, $margin, $border, $color, $background) {
+@mixin link-button($padding, $margin, $border, $color, $background) {
   display: inline-block;
   text-decoration: none;
   padding: $padding;
@@ -56,6 +45,17 @@
   background: $background;
 }
 
+@mixin card-container($width, $height, $padding, $margin, $background) {
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  width: $width;
+  height: $height;
+  padding: $padding;
+  margin: $margin;
+  background: $background;
+}
 
 /****************************
 *********** GRID **********

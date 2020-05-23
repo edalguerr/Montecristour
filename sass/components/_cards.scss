@@ -9,11 +9,11 @@
 }
 
 .place-card__image {
-	@include card-image(auto, 148px);
+	@include image(auto, 148px);
 }
 
 .place-card__title {
-	@include card-title(
+	@include title(
 		5px, 
   	15px 0, 
   	map-get($fonts-family, 'main'), 
@@ -25,7 +25,7 @@
 }
 
 .place-card__description {
-	@include card-text(
+	@include text(
 		60px,
 		map-get($fonts-family, 'main'), 
 		13px, 
@@ -35,7 +35,7 @@
 }
 
 .place-card__link {
-	@include card-link-button (
+	@include link-button (
 		5px 15px	,
 		25px 0 0 0,
 		1px solid #A8B1B8,
