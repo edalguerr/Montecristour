@@ -276,4 +276,11 @@ table {
   padding: 50px 20px;
   background-color: #f1f3f5;
 }
+
+.welcome {
+  height: 578px;
+  background-image: url("../images/welcome-background.jpg");
+  padding: 50px 20px;
+  margin-left: -20px;
+}
 /*# sourceMappingURL=main.css.map */

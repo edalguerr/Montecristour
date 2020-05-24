@@ -1,5 +1,5 @@
 /****************************
-*********** GENERALS **********
+*********** ELEMENTS ********
 *****************************/
 
 @mixin image($width, $height) {
@@ -55,6 +55,14 @@
   padding: $padding;
   margin: $margin;
   background: $background;
+}
+
+/****************************
+*********** PAGES **********
+*****************************/
+
+@mixin section-background($image, $color){
+  
 }
 
 /****************************

@@ -5,3 +5,14 @@
 	background-color: map-get($colors, 'background');
 }
 
+
+.welcome {
+	height: 578px;
+	background-image: url('../images/welcome-background.jpg');
+	padding: 
+		map-get($padding-section, 'topBottom')
+		map-get($padding-section, 'leftRight'); 
+	//the 	width of this block is 100% of viewport
+	//With margin-left negative we delete the padding left initial of parent
+	margin-left: - map-get($padding-content-container, 'leftRight') ; 
+}
