@@ -135,10 +135,10 @@ table {
 *********** GRID **********
 *****************************/
 /****************************
-*********** GENERALS **********
+*********** ELEMENTS ********
 *****************************/
 /****************************
-*********** GRID **********
+*********** PAGES **********
 *****************************/
 .page-container {
   display: -webkit-box;
@@ -254,12 +254,13 @@ table {
 }
 
 .place-card__description {
-  overflow: hidden;
   height: 60px;
+  overflow: hidden;
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 20px;
   color: #364558;
+  text-align: center;
 }
 
 .place-card__link {
@@ -279,8 +280,44 @@ table {
 
 .welcome {
   height: 578px;
-  background-image: url("../images/welcome-background.jpg");
   padding: 50px 20px;
   margin-left: -20px;
+  position: relative;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../images/welcome-background.jpg");
+  background-color: #364558;
+}
+
+.welcome::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #364558;
+  opacity: 0.3;
+}
+
+.welcome__title {
+  position: relative;
+  padding: 0;
+  margin: 0 0 20px;
+  font-family: "PT Sans";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+
+.welcome__text {
+  position: relative;
+  font-family: "PT Sans";
+  font-size: 15px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

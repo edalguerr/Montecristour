@@ -1,0 +1,2 @@
+1) (modificar) espaciadado para html de 4 espacios y para css de 2
+2) (agregar) Una linea en blanco despues y antes de cada llave de apertura y cierre

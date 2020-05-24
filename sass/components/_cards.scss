@@ -25,8 +25,9 @@
 }
 
 .place-card__description {
+	height: 60px;
+	overflow: hidden;
 	@include text(
-		60px,
 		map-get($fonts-family, 'main'), 
 		13px, 
 		20px, 
