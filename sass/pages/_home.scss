@@ -13,7 +13,9 @@
 		map-get($padding-section, 'leftRight'); 
 	//the 	width of this block is 100% of viewport
 	//With margin-left negative we delete the padding left initial of parent
-	margin-left: - map-get($padding-content-container, 'leftRight') ; 
+	margin: 
+		0
+		delete-padding-parent( map-get($padding-content-container, 'leftRight')); 
 	@include section-background(
 		'../images/welcome-background.jpg', 
 		map-get($colors, 'complementary')
@@ -51,7 +53,7 @@
 		8px 
 		20px, 
 		0, 
-		1px solid #A8B1B8,
+		1px solid map-get($colors, 'main'),
 		map-get($colors, 'secondary'),
 		map-get($colors, 'main')
 	);

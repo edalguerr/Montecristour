@@ -1,1 +1,4 @@
 
+@function delete-padding-parent($padding-parent){
+  @return -$padding-parent;
+}
