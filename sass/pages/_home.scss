@@ -8,9 +8,10 @@
 
 .welcome {
 	height: 578px;
+	text-align: center;
 	padding: 
 		map-get($padding-section, 'topBottom')
-		map-get($padding-section, 'leftRight'); 
+		map-get($padding-content-container, 'leftRight'); 
 	//the 	width of this block is 100% of viewport
 	//With margin-left negative we delete the padding left initial of parent
 	margin: 
@@ -24,15 +25,8 @@
 
 .welcome__title {	
 	position: relative;
-	@include title(
-  	0, 
-  	0 0 20px, 
-  	map-get($fonts-family, 'main'), 
-  	24px, 
-  	map-get($fonts-weight, 'normal'), 
-  	center, 
- 	 map-get($colors, 'secondary')
-	);
+	@include section-title(map-get($colors, 'secondary'));
+
 }
 
 .welcome__text {
@@ -43,10 +37,10 @@
 		15px, 
 		24px, 
 		map-get($colors, 'secondary'),
-		left
+		center
 	);
 }
-
+ 
 .welcome__link {
 	position: relative;
 	@include link-button(
@@ -57,4 +51,12 @@
 		map-get($colors, 'secondary'),
 		map-get($colors, 'main')
 	);
+}
+
+.gastronomy {
+	@include section-page;
+}
+
+.gastronomy__title {
+	@include section-title(map-get($colors, 'complementary'));
 }

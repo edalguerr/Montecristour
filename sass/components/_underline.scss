@@ -2,6 +2,14 @@
 	@include underline;
 }
 
+.underline--dark {
+	@include underline--dark;
+}
+
 .underline__style {
-	@include undeline-style;
+	@include undeline__style;
+}
+
+.underline__style--dark {
+	@include underline__style--dark;
 }

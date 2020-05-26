@@ -1,5 +1,5 @@
 /****************************
-*********** ELEMENTS ********
+*********** COMPONENTS ********
 *****************************/
 
 @mixin image($width, $height) {
@@ -68,37 +68,64 @@
 
 }
 
-@mixin underline() {
+@mixin underline {
   
   display: block;
   width: 50%;  
   margin: 10px auto 50px;
   position: relative;  
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid map-get($colors, 'background');
 
 }
 
+@mixin underline--dark {
+ border-top: 1px solid map-get($colors, 'complementary'); 
+}
 
-@mixin undeline-style() {
+@mixin undeline__style {
 
   display: block;
+  box-sizing: border-box;
   width: 9px;  
   height: 9px;
   margin-left: -5px;
-  margin-top: -6px;
+  margin-top: -5px;
   position: absolute;
   left: 50%;
   border-radius: 20px;
-  border: 1px solid #fff;
-  background-color: #fff;
+  border: 1px solid map-get($colors, 'secondary');
+  background-color: map-get($colors, 'secondary');
     
+}
+
+@mixin underline__style--dark {
+  border: 1px solid map-get($colors, 'complementary');
+  background-color: map-get($colors, 'complementary');
 }
 
 
 
 /****************************
-*********** PAGES **********
+*********** ELEMENTS OF PAGES  **********
 *****************************/
+@mixin section-page {
+	padding: 
+		map-get($padding-section, 'topBottom')
+		map-get($padding-section, 'leftRight'); 
+}
+
+@mixin section-title($color) {
+  @include title(
+  	0, 
+  	0 0 20px, 
+  	map-get($fonts-family, 'main'), 
+  	24px, 
+  	map-get($fonts-weight, 'normal'), 
+  	center, 
+ 	  $color
+	);
+}
+
 
 @mixin section-background($image, $color) {
   

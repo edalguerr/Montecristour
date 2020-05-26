@@ -132,10 +132,10 @@ table {
 }
 
 /****************************
-*********** ELEMENTS ********
+*********** COMPONENTS ********
 *****************************/
 /****************************
-*********** PAGES **********
+*********** ELEMENTS OF PAGES  **********
 *****************************/
 .page-container {
   display: -webkit-box;
@@ -275,20 +275,31 @@ table {
   width: 50%;
   margin: 10px auto 50px;
   position: relative;
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #f1f3f5;
+}
+
+.underline--dark {
+  border-top: 1px solid #364558;
 }
 
 .underline__style {
   display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 9px;
   height: 9px;
   margin-left: -5px;
-  margin-top: -6px;
+  margin-top: -5px;
   position: absolute;
   left: 50%;
   border-radius: 20px;
   border: 1px solid #fff;
   background-color: #fff;
+}
+
+.underline__style--dark {
+  border: 1px solid #364558;
+  background-color: #364558;
 }
 
 .home-body-container {
@@ -298,6 +309,7 @@ table {
 
 .welcome {
   height: 578px;
+  text-align: center;
   padding: 50px 20px;
   margin: 0 -20px;
   position: relative;
@@ -337,7 +349,7 @@ table {
   font-size: 15px;
   line-height: 24px;
   color: #fff;
-  text-align: left;
+  text-align: center;
 }
 
 .welcome__link {
@@ -349,5 +361,19 @@ table {
   border: 1px solid #f03e3e;
   color: #fff;
   background: #f03e3e;
+}
+
+.gastronomy {
+  padding: 50px 0;
+}
+
+.gastronomy__title {
+  padding: 0;
+  margin: 0 0 20px;
+  font-family: "PT Sans";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #364558;
 }
 /*# sourceMappingURL=main.css.map */
