@@ -44,3 +44,36 @@
 		map-get($colors, 'main')
 	);
 }
+
+
+.dishe-card {	
+	@include card-container(
+		100%, 
+		auto, 
+		0, 
+		0 5px 30px, 
+		map-get($colors, 'secondary')
+	);
+	background-color: transparent;
+}
+
+.dishe-card__image {
+	display: block;
+	box-sizing: border-box;
+	padding: 4px;
+	margin: 0 auto;
+	background: map-get($colors, 'secondary');
+	@include image(100%, auto);
+}
+
+.dishe-card__title {
+	@include title(
+  	8px 0, 
+  	10px 0, 
+  	map-get($fonts-family, 'main'),  
+  	13px, 
+  	map-get($fonts-weight, 'normal'),  
+  	center,
+  	map-get($colors, 'complementary')
+	)
+}
