@@ -55,6 +55,10 @@
 		map-get($colors, 'secondary')
 	);
 	background-color: transparent;
+
+	&:hover {
+		border-bottom: 2px solid red;
+	}
 }
 
 .dishe-card__image {
@@ -63,13 +67,19 @@
 	padding: 4px;
 	margin: 0 auto;
 	background: map-get($colors, 'secondary');
+	transition: transform 2s ease 0s;
 	@include image(100%, auto);
+
+	&:hover {
+		transform: scale(1.1, 1.1);
+		padding: 2px;
+	}
 }
 
 .dishe-card__title {
 	@include title(
   	8px 0, 
-  	10px 0, 
+  	20px 0, 
   	map-get($fonts-family, 'main'),  
   	13px, 
   	map-get($fonts-weight, 'normal'),  

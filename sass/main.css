@@ -284,6 +284,10 @@ table {
   background-color: transparent;
 }
 
+.dishe-card:hover {
+  border-bottom: 2px solid red;
+}
+
 .dishe-card__image {
   display: block;
   -webkit-box-sizing: border-box;
@@ -291,13 +295,23 @@ table {
   padding: 4px;
   margin: 0 auto;
   background: #fff;
+  -webkit-transition: -webkit-transform 2s ease 0s;
+  transition: -webkit-transform 2s ease 0s;
+  transition: transform 2s ease 0s;
+  transition: transform 2s ease 0s, -webkit-transform 2s ease 0s;
   width: 100%;
   height: auto;
 }
 
+.dishe-card__image:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  padding: 2px;
+}
+
 .dishe-card__title {
   padding: 8px 0;
-  margin: 10px 0;
+  margin: 20px 0;
   font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
