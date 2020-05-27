@@ -575,7 +575,7 @@ table {
   font-size: 15px;
   line-height: 24px;
   color: #fff;
-  text-align: justify;
+  text-align: center;
 }
 
 .history-body__link {
@@ -587,5 +587,19 @@ table {
   border: 1px solid #f03e3e;
   color: #fff;
   background: #f03e3e;
+}
+
+.gallery {
+  padding: 50px 0 0;
+}
+
+.gallery__title {
+  padding: 0;
+  margin: 0 0 20px;
+  font-family: "PT Sans";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #364558;
 }
 /*# sourceMappingURL=main.css.map */

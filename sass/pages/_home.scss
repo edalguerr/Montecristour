@@ -85,7 +85,7 @@
 		15px, 
 		24px, 
 		map-get($colors, 'secondary'),
-		justify
+		center
 	);
 }
 
@@ -99,4 +99,12 @@
 		map-get($colors, 'secondary'),
 		map-get($colors, 'main')
 	);
+}
+
+.gallery {
+	@include section-page;
+}
+
+.gallery__title {
+	@include section-title(map-get($colors, 'complementary'));
 }
