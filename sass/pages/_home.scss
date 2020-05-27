@@ -18,7 +18,6 @@
 .welcome__title {	
 	position: relative;
 	@include section-title(map-get($colors, 'secondary'));
-
 }
 
 .welcome__text {
@@ -60,7 +59,44 @@
 }
 
 .event-container__title {
-	
 	@include section-title(map-get($colors, 'complementary'));
 }
 
+
+.history-body {
+	height: 578px;
+	text-align: center;
+	@include section-background(
+		'../images/welcome-background.jpg', 
+		map-get($colors, 'complementary')
+	);
+}
+
+.history-body__title {
+	position: relative;
+	@include section-title(map-get($colors, 'secondary'));
+}
+
+.history-body__abstract {
+	margin-bottom: 35px;
+	position: relative;
+	@include text(
+		map-get($fonts-family, 'main'), 
+		15px, 
+		24px, 
+		map-get($colors, 'secondary'),
+		justify
+	);
+}
+
+.history-body__link {
+	position: relative;
+	@include link-button(
+		8px 
+		20px, 
+		0, 
+		1px solid map-get($colors, 'main'),
+		map-get($colors, 'secondary'),
+		map-get($colors, 'main')
+	);
+}
