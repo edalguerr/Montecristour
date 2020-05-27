@@ -294,6 +294,10 @@ table {
   border-bottom: 2px solid red;
 }
 
+.dishe-card:last-child {
+  margin-bottom: 0px;
+}
+
 .dishe-card__image {
   display: block;
   -webkit-box-sizing: border-box;
