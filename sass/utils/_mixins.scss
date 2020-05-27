@@ -189,6 +189,18 @@
   grid-row: #{$row-start} / #{$row-end};
 }
 
+@mixin grid-gap($gap) {
+  gap: $gap;
+}
+
+@mixin grid-column-gap($gap) {
+  column-gap: $gap;
+}
+
+@mixin grid-row-gap($gap) {
+  row-gap: $gap;
+}
+
 @mixin grid-align-self($value) {
   -ms-grid-row-align: $value;
   align-self: $value;
