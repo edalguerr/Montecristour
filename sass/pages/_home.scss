@@ -9,14 +9,6 @@
 .welcome {
 	height: 578px;
 	text-align: center;
-	padding: 
-		map-get($padding-section, 'topBottom')
-		map-get($padding-content-container, 'leftRight'); 
-	//the 	width of this block is 100% of viewport
-	//With margin-left negative we delete the padding left initial of parent
-	margin: 
-		0
-		delete-padding-parent( map-get($padding-content-container, 'leftRight')); 
 	@include section-background(
 		'../images/welcome-background.jpg', 
 		map-get($colors, 'complementary')
@@ -68,6 +60,7 @@
 }
 
 .event-container__title {
+	
 	@include section-title(map-get($colors, 'complementary'));
 }
 

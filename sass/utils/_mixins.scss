@@ -129,7 +129,14 @@
 
 
 @mixin section-background($image, $color) {
-  
+  padding: 
+		map-get($padding-section, 'topBottom')
+		map-get($padding-content-container, 'leftRight'); 
+	//the 	width of this block is 100% of viewport
+	//With margin-left negative we delete the padding left initial of parent
+	margin: 
+		0
+		delete-padding-parent( map-get($padding-content-container, 'leftRight')); 
   position: relative;
   background-position: center center;
   background-attachment: fixed;
@@ -193,11 +200,11 @@
   gap: $gap;
 }
 
-@mixin grid-column-gap($gap) {
+@mixin grid-gap-column($gap) {
   column-gap: $gap;
 }
 
-@mixin grid-row-gap($gap) {
+@mixin grid-gap-row($gap) {
   row-gap: $gap;
 }
 
