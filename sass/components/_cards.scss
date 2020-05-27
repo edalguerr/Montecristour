@@ -87,3 +87,17 @@
   	map-get($colors, 'complementary')
 	)
 }
+
+.event-card {
+	@include card-container(
+		100%, 
+		100px, 
+		0, 
+		0 0 29px 16px, 
+		map-get($colors, 'background')
+	);
+}
+
+.event-card__image {
+	@include image(100%, auto);
+}

@@ -53,6 +53,7 @@
 	);
 }
 
+
 .gastronomy {
 	@include section-page;
 }
@@ -60,3 +61,13 @@
 .gastronomy__title {
 	@include section-title(map-get($colors, 'complementary'));
 }
+
+
+.event-container {
+	@include section-page;
+}
+
+.event-container__title {
+	@include section-title(map-get($colors, 'complementary'));
+}
+
