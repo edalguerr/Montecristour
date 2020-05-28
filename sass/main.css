@@ -158,6 +158,8 @@ table {
 
 .navbar {
   height: 40px;
+  -webkit-transition: height 1s ease 0s;
+  transition: height 1s ease 0s;
   color: #fff;
   background: #f03e3e;
 }

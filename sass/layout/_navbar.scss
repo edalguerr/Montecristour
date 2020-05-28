@@ -1,5 +1,6 @@
 .navbar {
 	height: 40px;
+	transition: height 1s ease 0s;
 	color: map-get($colors, 'secondary');
 	background: map-get($colors, 'main');
 }
