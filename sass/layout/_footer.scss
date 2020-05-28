@@ -1,4 +1,12 @@
 .footer-body {
 	height: 40px;
-	@include section-page;
+	padding-top: 28px;
+	text-align: center;
+	font-family: map-get($fonts-family, 'main');
+	color: map-get($colors, 'secondary');
+	background-color: map-get($colors, 'complementary');
+}
+
+.footer-body__icon {
+	color: #98ca3f;
 }

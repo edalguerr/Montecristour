@@ -231,6 +231,19 @@ table {
   font-family: "PT Sans";
 }
 
+.footer-body {
+  height: 40px;
+  padding-top: 28px;
+  text-align: center;
+  font-family: "PT Sans";
+  color: #fff;
+  background-color: #364558;
+}
+
+.footer-body__icon {
+  color: #98ca3f;
+}
+
 .place-card {
   overflow: hidden;
   -webkit-box-sizing: border-box;
