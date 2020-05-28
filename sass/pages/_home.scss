@@ -108,3 +108,14 @@
 .gallery__title {
 	@include section-title(map-get($colors, 'complementary'));
 }
+
+.gallery-grid {
+	@include display-flex;
+	@include flex-direction-column;
+}
+
+.gallery-grid__image {
+	object-fit: cover;
+	border-radius: 5px;
+	@include image(100%,220px);
+}
