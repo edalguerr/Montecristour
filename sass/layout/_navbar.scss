@@ -28,11 +28,12 @@
 }
 
 .navbar-container__item {
-  padding: 7px;
   border-bottom: 1px solid #fff;
 }
 
 .navbar-container__link {
+	display: block;
+	padding: 7px;
 	text-decoration: none;
 	color: map-get($colors, 'secondary');
 }
