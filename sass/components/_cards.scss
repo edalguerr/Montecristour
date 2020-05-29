@@ -140,7 +140,7 @@
   	map-get($colors, 'main')
 	);
 	@include grid-column(2, 4);
-	@include grid-align-self(center);
+	@include align-self(center);
 }
 
 .event-card__description {

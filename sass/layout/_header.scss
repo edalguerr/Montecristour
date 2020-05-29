@@ -8,7 +8,8 @@
 }
 
 .slider-header__image {
-	width: 100%;
+	object-fit: cover;
+	@include image(100%, 100%);
 }
 
 .slider-header__invitation-text {
@@ -31,4 +32,11 @@
 	margin-bottom: 15px;	
 	font-weight: bolder;  
 	font-family: map-get($fonts-family, 'main' );
+}
+
+
+@include media(medium) {
+	.slider-header {
+		height: 250px;
+	}
 }

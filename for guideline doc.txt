@@ -1,2 +1,4 @@
 1) (modificar) espaciadado para html de 4 espacios y para css de 2
 2) (agregar) Una linea en blanco despues y antes de cada llave de apertura y cierre
+3) (agregar) Las media queries deben ir al final del archivo separandolas del resto de los estilos con 2 lineas vacias
+4) (modificar) Usaremos los mixins para media-queries, grillas.

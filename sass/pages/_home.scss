@@ -10,8 +10,6 @@
 
 
 .welcome {
-	height: 578px;
-	text-align: center;
 	@include section-background(
 		'../images/welcome-background.jpg', 
 		map-get($colors, 'complementary')
@@ -66,9 +64,7 @@
 }
 
 
-.history-body {
-	height: 578px;
-	text-align: center;
+.history-body {	
 	@include section-background(
 		'../images/welcome-background.jpg', 
 		map-get($colors, 'complementary')
@@ -122,4 +118,36 @@
 	object-fit: cover;
 	border-radius: 5px;
 	@include image(100%,220px);
+}
+
+
+@include media(medium) {
+	
+	.home-body-container {
+		box-sizing: border-box;
+		width: 440px;
+		margin: 0 auto;
+		@include display-flex;
+		@include flex-direction-column;
+		@include align-self(center);
+	}
+
+	
+	.welcome {
+		box-sizing: border-box;
+		width: 100vw;
+		padding: 50px;
+		@include align-self(center);
+	}
+
+
+	.history-container {		
+		@include align-self(center);
+	}
+
+	.history-body {
+		box-sizing: border-box;
+		width: 100vw;
+		padding: 50px;			
+	}
 }

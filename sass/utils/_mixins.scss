@@ -129,21 +129,25 @@
 
 
 @mixin section-background($image, $color) {
+  
+  height: 578px;
+  position: relative;
+	text-align: center;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url($image);  
+  background-color: $color;
   padding: 
 		map-get($padding-section, 'topBottom')
 		map-get($padding-content-container, 'leftRight'); 
 	//the 	width of this block is 100% of viewport
 	//With margin-left negative we delete the padding left initial of parent
 	margin: 
-		0
-		delete-padding-parent( map-get($padding-content-container, 'leftRight')); 
-  position: relative;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url($image);  
-  background-color: $color;
-  
+		map-get($padding-section, 'topBottom')
+		delete-padding-parent( map-get($padding-content-container, 'leftRight'))
+    0; 
+
   &::before  {    
     
     content:' ';
@@ -223,12 +227,12 @@
   row-gap: $gap;
 }
 
-@mixin grid-align-self($value) {
+@mixin align-self($value) {
   -ms-grid-row-align: $value;
   align-self: $value;
 }
 
-@mixin grid-justify-self($value) {
+@mixin justify-self($value) {
   -ms-grid-column-align: $value;
   justify-self: $value;
 }
