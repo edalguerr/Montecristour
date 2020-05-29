@@ -273,6 +273,19 @@ table {
   background: #fff;
 }
 
+.place-card:hover {
+  background-color: #f03e3e;
+}
+
+.place-card:hover .place-card__title, .place-card:hover .place-card__description {
+  color: #fff;
+}
+
+.place-card:hover .place-card__link {
+  color: #f03e3e;
+  background-color: #fff;
+}
+
 .place-card__image {
   -o-object-fit: cover;
      object-fit: cover;

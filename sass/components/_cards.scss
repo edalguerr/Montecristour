@@ -6,6 +6,19 @@
 		0 0 25px, 
 		map-get($colors, 'secondary')
 	);
+
+	&:hover {
+		background-color: map-get($colors, 'main');
+
+		.place-card__title, .place-card__description {
+			color: map-get($colors, 'secondary');
+		}
+
+		.place-card__link {
+			color: map-get($colors, 'main');
+			background-color:  map-get($colors, 'secondary');			
+		}
+	}
 }
 
 .place-card__image {
@@ -23,6 +36,7 @@
   	center, 
   	map-get($colors, 'main')
 	);
+
 }
 
 .place-card__description {
