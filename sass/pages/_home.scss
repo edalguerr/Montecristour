@@ -117,7 +117,7 @@
 .gallery-grid__image {
 	object-fit: cover;
 	border-radius: 5px;
-	@include image(100%,220px);
+	@include image(100%,auto);
 }
 
 
@@ -149,5 +149,10 @@
 		box-sizing: border-box;
 		width: 100vw;
 		padding: 50px;			
+	}
+
+	.gallery {
+		width: 80vw;
+		align-self: center;
 	}
 }
