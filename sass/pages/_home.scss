@@ -1,8 +1,11 @@
+.page-container {
+	background-color: map-get($colors, 'background');
+}
+
 .home-body-container {
 	padding: 
 		map-get($padding-content-container, 'topBottom') 
 		map-get($padding-content-container, 'leftRight');
-	background-color: map-get($colors, 'background');
 }
 
 

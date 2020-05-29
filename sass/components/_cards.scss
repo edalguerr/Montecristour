@@ -9,7 +9,8 @@
 }
 
 .place-card__image {
-	@include image(auto, 148px);
+	object-fit: cover;
+	@include image(100%, 148px);
 }
 
 .place-card__title {
