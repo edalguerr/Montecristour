@@ -227,6 +227,10 @@
   row-gap: $gap;
 }
 
+@mixin justify-content($value) {
+  justify-content: $value;
+}
+
 @mixin align-self($value) {
   -ms-grid-row-align: $value;
   align-self: $value;

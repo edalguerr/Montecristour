@@ -10,6 +10,9 @@
 
 
 .welcome {
+	@include display-flex;
+	@include flex-direction-column;
+	@include justify-content(center);
 	@include section-background(
 		'../images/welcome-background.jpg', 
 		map-get($colors, 'complementary')
@@ -34,7 +37,9 @@
 }
  
 .welcome__link {
+	width: 80px;
 	position: relative;
+	@include align-self(center);
 	@include link-button(
 		8px 
 		20px, 
@@ -65,6 +70,9 @@
 
 
 .history-body {	
+	@include display-flex;
+	@include flex-direction-column;
+	@include justify-content(center);
 	@include section-background(
 		'../images/welcome-background.jpg', 
 		map-get($colors, 'complementary')
@@ -89,7 +97,9 @@
 }
 
 .history-body__link {
+	width: 80px;
 	position: relative;
+	@include align-self(center);
 	@include link-button(
 		8px 
 		20px, 
