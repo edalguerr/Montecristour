@@ -203,6 +203,62 @@ table {
   color: #fff;
 }
 
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    height: 60px;
+    padding-left: 25px;
+    color: #f03e3e;
+    background: #fff;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar__toggle {
+    width: 10%;
+    padding: 20px;
+    font-size: 28px;
+    font-family: "Pacifico";
+    color: #364558;
+  }
+  .navbar__toggle-icon {
+    font-size: 0px;
+  }
+  .navbar-container {
+    width: 80%;
+    height: 100%;
+    color: #f03e3e;
+    background: #fff;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-container__item:hover .navbar-container__link {
+    color: #fff;
+    background: #364558;
+  }
+  .navbar-container__link {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 60px;
+    padding: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #364558;
+  }
+}
+
 .header-body {
   position: relative;
   overflow: hidden;
@@ -253,6 +309,15 @@ table {
   }
   .slider-header__invitation-text {
     font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slider-header {
+    height: 380px;
+  }
+  .slider-header__invitation-text {
+    font-size: 42px;
   }
 }
 

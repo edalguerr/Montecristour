@@ -37,3 +37,58 @@
 	text-decoration: none;
 	color: map-get($colors, 'secondary');
 }
+
+@include media(x-large) {
+	
+	.navbar {
+		height: 60px;
+		padding-left: 25px;
+		color: map-get($colors, 'main');
+		background: map-get($colors, 'secondary');
+		@include display-flex;
+		@include justify-content(space-between);
+		@include align-items(center);
+	}
+
+	
+	.navbar__toggle {
+		width: 10%;
+		padding: 20px;		
+		font-size: 28px;
+		font-family: map-get($fonts-family, 'elegance');
+		color: map-get($colors, 'complementary');
+	}
+
+	.navbar__toggle-icon {
+		font-size: 0px;
+	}
+
+
+	.navbar-container {
+		width: 80%;
+		height: 100%;
+		color: map-get($colors, 'main');
+		background: map-get($colors, 'secondary');
+		@include display-flex;
+		@include justify-content(flex-end);
+		@include align-items(center);
+	}
+
+	.navbar-container__item:hover {
+		
+		.navbar-container__link{
+			color: map-get($colors, 'secondary');
+			background: map-get($colors, 'complementary');
+		}
+		
+	} 
+
+	.navbar-container__link {
+		box-sizing: border-box;
+		height: 60px;
+		padding: 20px;		
+		font-weight: map-get($fonts-weight, 'bold');
+		font-family: map-get($fonts-family, 'secondary');
+		color: map-get($colors, 'complementary');
+	}
+}

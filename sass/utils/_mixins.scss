@@ -231,6 +231,10 @@
   justify-content: $value;
 }
 
+@mixin  align-items($value) {
+  align-items: $value;
+}
+
 @mixin align-self($value) {
   -ms-grid-row-align: $value;
   align-self: $value;
