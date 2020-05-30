@@ -40,3 +40,14 @@
 		height: 250px;
 	}
 }
+
+
+@include media(large) {
+	.slider-header {
+		height: 280px;
+	}
+
+	.slider-header__invitation-text {
+		font-size: 36px;
+	}
+}

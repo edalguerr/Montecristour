@@ -73,6 +73,11 @@
 
 	&:hover {
 		border-bottom: 2px solid red;
+
+		.dishe-card__image {
+			transform: scale(1.1, 1.1);
+			padding: 2px;
+		}
 	}
 
 	&:last-child {
@@ -88,11 +93,6 @@
 	background: map-get($colors, 'secondary');
 	transition: transform 2s ease 0s;
 	@include image(100%, auto);
-
-	&:hover {
-		transform: scale(1.1, 1.1);
-		padding: 2px;
-	}
 }
 
 .dishe-card__title {
@@ -109,9 +109,9 @@
 
 
 .event-card {
-
+	text-decoration: none;
 	@include card-container(
-		100%, 
+		auto, 
 		auto, 
 		0, 
 		0 0 29px 16px, 
@@ -122,9 +122,10 @@
 	@include grid-template-rows(grid-repeat(2, 50px));
 
 	&:first-child {
+		height: 250px;
 		margin: 0 0 50px;
 		@include grid-template-columns(grid-repeat(3));
-		@include grid-template-rows(grid-repeat(5, 50px));
+		@include grid-template-rows(grid-repeat(5, 1fr));
 	}
 }
 
@@ -168,4 +169,22 @@
 	);
 	@include grid-row(2, 3);
 	@include grid-column(2, 4);
+}
+
+@include media(large) {
+	.place-card {
+		margin-left: 0.4%;
+		margin-right: 0.4%;
+	}
+
+	.event-card:first-child {
+		height: 100%;
+		padding-bottom: 20px;
+		@include grid-row(1, 4);
+	}
+
+	.event-card {
+		margin-bottom: 20px;
+	}
+
 }
