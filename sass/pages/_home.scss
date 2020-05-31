@@ -49,6 +49,11 @@
 		map-get($colors, 'secondary'),
 		map-get($colors, 'main')
 	);
+
+	&:hover {
+		color: map-get($colors, 'main');
+		background-color: map-get($colors, 'secondary');
+	}
 }
 
 
@@ -109,6 +114,11 @@
 		map-get($colors, 'secondary'),
 		map-get($colors, 'main')
 	);
+
+	&:hover {
+		color: map-get($colors, 'main');
+		background-color: map-get($colors, 'secondary');
+	}
 }
 
 

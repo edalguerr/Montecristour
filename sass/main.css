@@ -663,6 +663,11 @@ table {
   background: #f03e3e;
 }
 
+.welcome__link:hover {
+  color: #f03e3e;
+  background-color: #fff;
+}
+
 .gastronomy {
   padding: 50px 0 0;
 }
@@ -759,6 +764,11 @@ table {
   border: 1px solid #f03e3e;
   color: #fff;
   background: #f03e3e;
+}
+
+.history-body__link:hover {
+  color: #f03e3e;
+  background-color: #fff;
 }
 
 .gallery {
