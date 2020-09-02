@@ -1,0 +1,47 @@
+.page-container--history {
+	background-image: url("../images/history-background.jpg");
+	background-size: cover;
+	background-repeat: round;
+}
+
+.title-introduction{
+	/*text-shadow: 10px 5px 35px;*/
+	@include title(
+  	map-get($padding-section, 'topBottom') 
+		map-get($padding-section, 'topBottom') 
+		map-get($padding-section, 'leftRight') 
+		map-get($padding-section, 'topBottom'), 
+  	0, 
+  	map-get($fonts-family,'main'), 
+  	40px, 
+  	map-get($fonts-weight,'bold'), 
+  	center, 
+  	map-get($colors,'complementary')
+	) 
+}
+
+.phrase-introduction {
+	font-style: italic;
+	@include title(
+  	map-get($padding-content-container, 'leftRight') 
+		map-get($padding-section, 'topBottom') 
+		map-get($padding-section, 'topBottom') 
+		map-get($padding-section, 'topBottom'), 
+  	0, 
+  	map-get($fonts-family,'complementary'), 
+  	18px, 
+  	map-get($fonts-weight,'normal'), 
+  	center, 
+  	map-get($colors,'complementary')
+	) 
+}
+
+.img-introduction {
+	@include card-container(
+		100%, 
+		400px, 
+		2px, 
+		0 0 15px, 
+		map-get($colors, 'complementary')
+	);
+}

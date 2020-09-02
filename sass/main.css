@@ -897,4 +897,45 @@ table {
             column-gap: 5px;
   }
 }
+
+.page-container--history {
+  background-image: url("../images/history-background.jpg");
+  background-size: cover;
+  background-repeat: round;
+}
+
+.title-introduction {
+  /*text-shadow: 10px 5px 35px;*/
+  padding: 50px 50px 0 50px;
+  margin: 0;
+  font-family: "PT Sans";
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: #364558;
+}
+
+.phrase-introduction {
+  font-style: italic;
+  padding: 20px 50px 50px 50px;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #364558;
+}
+
+.img-introduction {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  padding: 2px;
+  margin: 0 0 15px;
+  background: #364558;
+}
 /*# sourceMappingURL=main.css.map */
