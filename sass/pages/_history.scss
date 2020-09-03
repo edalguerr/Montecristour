@@ -63,6 +63,18 @@
 	display: none;
 }
 
+.biography-container__author {
+	font-style: italic;
+	@include text(
+  map-get($fonts-family, "main"), 
+  13px, 
+  23px, 
+  map-get($colors, "complementary"), 
+  justify
+	);
+}
+
+
 @include media(large) {
 	
 	
@@ -137,17 +149,6 @@
 
 	.biography-container__photo {
 		@include image(100%, auto);
-	}
-
-	.biography-container__author {
-		font-style: italic;
-		@include text(
-	  map-get($fonts-family, "main"), 
-	  13px, 
-	  23px, 
-	  map-get($colors, "complementary"), 
-	  justify
-		);
 	}
 
 }

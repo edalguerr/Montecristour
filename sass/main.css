@@ -956,6 +956,15 @@ table {
   display: none;
 }
 
+.biography-container__author {
+  font-style: italic;
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 23px;
+  color: #364558;
+  text-align: justify;
+}
+
 @media only screen and (min-width: 768px) {
   .title-introduction {
     /*text-shadow: 10px 5px 35px;*/
@@ -1028,14 +1037,6 @@ table {
   .biography-container__photo {
     width: 100%;
     height: auto;
-  }
-  .biography-container__author {
-    font-style: italic;
-    font-family: "PT Sans";
-    font-size: 13px;
-    line-height: 23px;
-    color: #364558;
-    text-align: justify;
   }
 }
 /*# sourceMappingURL=main.css.map */
