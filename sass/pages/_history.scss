@@ -7,13 +7,13 @@
 .title-introduction{
 	/*text-shadow: 10px 5px 35px;*/
 	@include title(
-  	map-get($padding-section, 'topBottom') 
+  	map-get($padding-section, 'leftRight') 
 		map-get($padding-section, 'topBottom') 
 		map-get($padding-section, 'leftRight') 
 		map-get($padding-section, 'topBottom'), 
   	0, 
   	map-get($fonts-family,'main'), 
-  	40px, 
+  	20px, 
   	map-get($fonts-weight,'bold'), 
   	center, 
   	map-get($colors,'complementary')
@@ -29,7 +29,7 @@
 		map-get($padding-section, 'topBottom'), 
   	0, 
   	map-get($fonts-family,'complementary'), 
-  	18px, 
+  	13px, 
   	map-get($fonts-weight,'normal'), 
   	center, 
   	map-get($colors,'complementary')
@@ -39,9 +39,115 @@
 .img-introduction {
 	@include card-container(
 		100%, 
-		400px, 
+		auto, 
 		2px, 
 		0 0 15px, 
 		map-get($colors, 'complementary')
 	);
+}
+
+.biography-container__text {
+	@include text(
+  map-get($fonts-family, "main"), 
+  16px, 
+  24px, 
+  map-get($colors, "complementary"), 
+  justify
+	);
+}
+
+.biography-container__storie {
+	margin-bottom: 25px;
+}
+.biography-container__img {
+	display: none;
+}
+
+@include media(large) {
+	
+	
+	.title-introduction{
+		/*text-shadow: 10px 5px 35px;*/
+		@include title(
+	  	map-get($padding-section, 'topBottom') 
+			map-get($padding-section, 'topBottom') 
+			map-get($padding-section, 'leftRight') 
+			map-get($padding-section, 'topBottom'), 
+	  	0, 
+	  	map-get($fonts-family,'main'), 
+	  	40px, 
+	  	map-get($fonts-weight,'bold'), 
+	  	center, 
+	  	map-get($colors,'complementary')
+		) 
+	}
+
+	.phrase-introduction {
+		font-style: italic;
+		@include title(
+	  	map-get($padding-content-container, 'leftRight') 
+			map-get($padding-section, 'topBottom') 
+			map-get($padding-section, 'topBottom') 
+			map-get($padding-section, 'topBottom'), 
+	  	0, 
+	  	map-get($fonts-family,'complementary'), 
+	  	18px, 
+	  	map-get($fonts-weight,'normal'), 
+	  	center, 
+	  	map-get($colors,'complementary')
+		) 
+	}
+
+	.img-introduction {
+		@include card-container(
+			100%, 
+			auto, 
+			2px, 
+			0 0 15px, 
+			map-get($colors, 'complementary')
+		);
+	}
+
+	.biography-container {
+		overflow: hidden;
+		@include display-grid;
+		@include grid-template-columns(grid-repeat(4));
+	}
+
+	.biography-container__text {
+		@include grid-column(1,4);
+		@include text(
+	  map-get($fonts-family, "main"), 
+	  18px, 
+	  24px, 
+	  map-get($colors, "complementary"), 
+	  justify
+		);
+	}
+
+	.biography-container__img {
+		display: block;
+		padding: 15px;
+		@include grid-column(4,5);
+		@include grid-row(1,10);
+		@include display-flex;
+		@include flex-direction-column;
+		@include justify-content(space-around);
+	}
+
+	.biography-container__photo {
+		@include image(100%, auto);
+	}
+
+	.biography-container__author {
+		font-style: italic;
+		@include text(
+	  map-get($fonts-family, "main"), 
+	  13px, 
+	  23px, 
+	  map-get($colors, "complementary"), 
+	  justify
+		);
+	}
+
 }
