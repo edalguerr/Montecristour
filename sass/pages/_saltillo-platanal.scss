@@ -1,6 +1,55 @@
 .grid-pinterest {
-	  display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
-    gap: 5px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+	grid-template-rows: repeat(3, 250px);
+  gap: 5px;
+  justify-content: center;
+}
+
+.grid-pinterest__item--level-1 {
+    grid-row-end: span 1;
+}
+
+.grid-pinterest__item--level-2 {
+  grid-row-end: span 2;
+}
+
+.grid-pinterest__item--level-3 {
+  grid-row-end: span 3;
+}
+
+.grid-pinterest__item {
+  border-radius: 5px;
+  background: #f2f2f2;
+	overflow: hidden;
+}
+
+.grid-pinterest__img {
+    
+  width: 100%;   
+	height: 100%;
+	object-fit: cover;
+    	
+}
+
+.movie-container {
+	@include display-flex;
+	@include flex-direction-column;		
+	@include grid-gap(15px);
+}
+
+.movie-container__content {
+	width: 100%;
+}
+
+@include media(x-large) {
+
+	.movie-container {
+		@include flex-direction-row;
+	}
+	
+	.movie-container__content {
+		width: 50%;
+	}
+
 }
