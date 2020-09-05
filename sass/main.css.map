@@ -15,7 +15,7 @@
         "components/_underline.scss",
         "pages/_home.scss",
         "pages/_history.scss",
-        "pages/_saltillo-platanal.scss"
+        "pages/_places-generic.scss"
     ],
     "names": [],
     "file": "main.css"

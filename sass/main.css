@@ -1055,8 +1055,8 @@ table {
 .grid-pinterest {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (350px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 350px);
+  -ms-grid-columns: (400px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 400px);
   -ms-grid-rows: (250px)[3];
       grid-template-rows: repeat(3, 250px);
   gap: 5px;
