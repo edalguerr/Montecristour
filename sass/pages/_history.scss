@@ -56,6 +56,10 @@
 	);
 }
 
+.biography-container__text--center	{
+	text-align: center;
+}
+
 .biography-container__storie {
 	margin-bottom: 25px;
 }
@@ -135,6 +139,10 @@
 	  map-get($colors, "complementary"), 
 	  justify
 		);
+	}
+
+	.biography-container__text--center	{
+		text-align: center;
 	}
 
 	.biography-container__img {

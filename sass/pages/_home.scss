@@ -9,6 +9,10 @@
 		map-get($padding-content-container, 'leftRight');
 }
 
+.home-body-container--py-0 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
 
 .welcome {
 	@include display-flex;

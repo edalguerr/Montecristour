@@ -594,6 +594,11 @@ table {
   padding: 50px 20px;
 }
 
+.home-body-container--py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .welcome {
   display: -ms-flexbox;
   display: -webkit-box;
@@ -948,6 +953,10 @@ table {
   text-align: justify;
 }
 
+.biography-container__text--center {
+  text-align: center;
+}
+
 .biography-container__storie {
   margin-bottom: 25px;
 }
@@ -1015,6 +1024,9 @@ table {
     color: #364558;
     text-align: justify;
   }
+  .biography-container__text--center {
+    text-align: center;
+  }
   .biography-container__img {
     display: block;
     padding: 15px;
@@ -1038,5 +1050,16 @@ table {
     width: 100%;
     height: auto;
   }
+}
+
+.grid-pinterest {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (250px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 250px);
+  gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
