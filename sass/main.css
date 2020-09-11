@@ -1057,8 +1057,8 @@ table {
   display: grid;
   -ms-grid-columns: (400px)[auto-fill];
       grid-template-columns: repeat(auto-fill, 400px);
-  -ms-grid-rows: (250px)[3];
-      grid-template-rows: repeat(3, 250px);
+  -ms-grid-rows: (250px)[5];
+      grid-template-rows: repeat(5, 250px);
   gap: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1110,13 +1110,10 @@ table {
 
 @media only screen and (min-width: 1200px) {
   .movie-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .movie-container__content {
-    width: 50%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,7 @@
 .grid-pinterest {
   display: grid;
   grid-template-columns: repeat(auto-fill, 400px);
-	grid-template-rows: repeat(3, 250px);
+	grid-template-rows: repeat(5, 250px);
   gap: 5px;
   justify-content: center;
 }
@@ -45,11 +45,9 @@
 @include media(x-large) {
 
 	.movie-container {
-		@include flex-direction-row;
+		@include display-grid;
+		@include grid-template-columns(repeat(2, 1fr));
 	}
 	
-	.movie-container__content {
-		width: 50%;
-	}
 
 }
